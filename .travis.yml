@@ -9,13 +9,14 @@ cache:
   directories:
     - "node_modules"
 
+script:
+  - npm run build
+
 deploy:
   provider: npm
   skip-cleanup: true
   email: $NPM_EMAIL
   api_key: $NPM_TOKEN
-  script:
-    - npm run build
   on:
     tags: true
     repo: cns-iu/pdfkit-browserify
