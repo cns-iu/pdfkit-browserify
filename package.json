@@ -1,0 +1,33 @@
+{
+  "name": "pdfkit-browserify",
+  "license": "MIT",
+  "description": "A PDF generation library for Node.js -- Browserified!",
+  "keywords": [
+    "pdf",
+    "pdf writer",
+    "pdf generator",
+    "graphics",
+    "document",
+    "vector"
+  ],
+  "version": "0.8.3",
+  "homepage": "http://pdfkit.org/",
+  "author": {
+    "name": "Devon Govett",
+    "email": "devongovett@gmail.com",
+    "url": "http://badassjs.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cns-iu/pdfkit-browserify.git"
+  },
+  "bugs": "http://github.com/devongovett/pdfkit/issues",
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "pdfkit": "^0.8.3"
+  },
+  "scripts": {
+    "build": "rm -f index.js && browserify -s PDFDocument node_modules/pdfkit -o index.js"
+  },
+  "main": "index.js"
+}
